@@ -1147,7 +1147,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .modal-input {
-    width: 448px;
+    max-width: 448px;
   }
 }
 
