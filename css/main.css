@@ -568,6 +568,11 @@ body {
   text-align: center;
   color: var(--header-color);
 }
+@media screen and (min-width: 1200px) {
+  .team__top-title {
+    font-size: 36px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .team__list {

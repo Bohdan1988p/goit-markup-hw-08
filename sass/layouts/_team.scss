@@ -8,6 +8,9 @@
     line-height: 1.16;
     text-align: center;
     color: var(--header-color);
+    @include desktop{
+    font-size: 36px;
+    }
   }
   
   .team__list {
