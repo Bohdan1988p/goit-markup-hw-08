@@ -1,9 +1,4 @@
-.clients-mob{
-  @media screen and (max-width:767px){
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
+
 .cliient-title {
   margin-bottom: 30px;
   font-size: 6vh;
@@ -40,11 +35,11 @@
   width: 100%;
 
   @include mobile{
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   @include tablet {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
   }
   @include desktop {
     flex-basis: calc((100% - 150px) / 6);

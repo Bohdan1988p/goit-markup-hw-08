@@ -1,20 +1,21 @@
 .benefits {
+  padding: 60px 0px 60px 0px;
+  @include desktop{
     padding: 94px 0px 0px 0px;
+  }
+   
   }
   
   .benefits__list {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    @media screen and (max-width:767px) {
-      padding-left: 15px;
-      padding-right: 15px; 
-    }
+   
   }
   
   .benefits__item {
     @include tablet {
-      flex-basis: calc((100% - 60px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
     }
     @include desktop{
       flex-basis: calc((100% - 90px) / 4);
@@ -30,6 +31,9 @@
     text-transform: uppercase;
     color: var(--header-color);
     text-align: center;
+    @include tablet{
+    text-align: left;
+    }
   }
   
   .benefits__text {
