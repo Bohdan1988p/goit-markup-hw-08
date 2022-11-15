@@ -37,14 +37,11 @@
   .logo__span--white {
     font-style: normal;
     font-weight: 700;
-    font-size: 6vh;
+    font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--mainbackdroundcolor);
-    @include mobile{
-      font-size: 24px;
-    line-height: 1.16;
-    }
+    
     @include desktop {
     font-size: 26px;
     line-height: 1.19;

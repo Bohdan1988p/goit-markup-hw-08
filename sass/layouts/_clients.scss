@@ -1,10 +1,13 @@
-
+.clients-mob{
+  @media screen and (max-width:767px){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .cliient-title {
   margin-bottom: 30px;
   font-size: 6vh;
   line-height:1.17;
-
-  
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -23,9 +26,23 @@
 .clients-list {
   display: flex;
   gap: 30px;
-  flex-basis: calc((100% - 60px) / 2);
+  // flex-basis: calc((100% - 60px) / 2);
   flex-wrap: wrap;
   justify-content: center;
+  // @include tablet {
+  //   flex-basis: calc((100% - 90px) / 3);
+  // }
+  // @include desktop {
+  //   flex-basis: calc((100% - 150px) / 6);
+  // }
+}
+.clients-item{
+  width: 100%;
+
+  @include mobile{
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
   @include tablet {
     flex-basis: calc((100% - 90px) / 3);
   }
@@ -36,7 +53,7 @@
 
 .cliets-link {
   display: flex;
-  width: 210px;
+  // width: 210px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -50,9 +67,9 @@
   border: 1px solid var(--akcent);
 }
 @include tablet {
-  width: 226px;
+  // width: 226px;
 }
 @include desktop {
-  width: 170px;
+  // width: 170px;
 }
 }

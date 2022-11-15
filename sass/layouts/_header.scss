@@ -7,9 +7,12 @@
   // display: flex;
   // align-items: center;
   @extend %flex-center;
+  
   @media screen and (max-width:767px) {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .navigation {
@@ -138,6 +141,8 @@
 }
 
 .menu__btn {
+  display: flex;
+  align-items: center;
   width: 40px;
   height: 40px;
   margin-left: auto;

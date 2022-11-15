@@ -115,6 +115,8 @@ body {
   .header__conteiner {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -223,6 +225,8 @@ body {
 }
 
 .menu__btn {
+  display: flex;
+  align-items: center;
   width: 40px;
   height: 40px;
   margin-left: auto;
@@ -397,7 +401,7 @@ body {
   text-align: center;
   font-style: normal;
   font-weight: 900;
-  font-size: 6vh;
+  font-size: 24px;
   line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -449,6 +453,12 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .benefits__list {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -620,6 +630,13 @@ body {
   fill: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .clients-mob {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 .cliient-title {
   margin-bottom: 30px;
   font-size: 6vh;
@@ -645,24 +662,31 @@ body {
 .clients-list {
   display: flex;
   gap: 30px;
-  flex-basis: calc((100% - 60px) / 2);
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.clients-item {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .clients-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
 @media screen and (min-width: 768px) {
-  .clients-list {
+  .clients-item {
     flex-basis: calc((100% - 90px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients-list {
+  .clients-item {
     flex-basis: calc((100% - 150px) / 6);
   }
 }
 
 .cliets-link {
   display: flex;
-  width: 210px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -675,17 +699,6 @@ body {
   fill: var(--akcent);
   border: 1px solid var(--akcent);
 }
-@media screen and (min-width: 768px) {
-  .cliets-link {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cliets-link {
-    width: 170px;
-  }
-}
-
 .footer {
   background: var(--footerbackground);
   padding-top: 60px;
@@ -721,16 +734,10 @@ body {
 .logo__span--white {
   font-style: normal;
   font-weight: 700;
-  font-size: 6vh;
+  font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--mainbackdroundcolor);
-}
-@media screen and (min-width: 480px) {
-  .logo__span--white {
-    font-size: 24px;
-    line-height: 1.16;
-  }
 }
 @media screen and (min-width: 1200px) {
   .logo__span--white {
